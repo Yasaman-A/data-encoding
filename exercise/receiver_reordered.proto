@@ -1,0 +1,11 @@
+syntax = "proto3";
+package exercise.reordered;
+
+// Lines in a different order, but the same field NUMBERS.
+// Declaration order in the .proto file does not matter.
+message Event {
+  int32  available_seats = 4;
+  int32  capacity        = 3;
+  string name            = 2;
+  int64  event_id        = 1;
+}

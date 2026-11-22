@@ -1,0 +1,11 @@
+syntax = "proto3";
+package exercise.swapped;
+
+// Same NAMES as the sender, but capacity and available_seats swap NUMBERS.
+// Both are int32, so the bytes still parse — into the wrong fields.
+message Event {
+  int64  event_id        = 1;
+  string name            = 2;
+  int32  capacity        = 4;  // sender used = 3
+  int32  available_seats = 3;  // sender used = 4
+}

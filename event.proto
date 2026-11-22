@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+// Just a message — no service, no RPC.
+// This is the schema both ends agree on.
+message Event {
+  int64  event_id        = 1;
+  string name            = 2;
+  int32  capacity        = 3;
+  int32  available_seats = 4;
+}

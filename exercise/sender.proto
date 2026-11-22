@@ -1,0 +1,10 @@
+syntax = "proto3";
+package exercise.sender;
+
+// The sender's schema. Field *numbers* are what go on the wire.
+message Event {
+  int64  event_id        = 1;
+  string name            = 2;
+  int32  capacity        = 3;
+  int32  available_seats = 4;
+}

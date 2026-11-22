@@ -1,0 +1,11 @@
+syntax = "proto3";
+package exercise.renamed;
+
+// Same field NUMBERS as the sender, different NAMES.
+// Field 2 is still the workshop title string — just called "title" here.
+message Event {
+  int64  event_id        = 1;
+  string title           = 2;  // was "name" on the sender; number 2 unchanged
+  int32  capacity        = 3;
+  int32  available_seats = 4;
+}
